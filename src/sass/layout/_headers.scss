@@ -1,0 +1,82 @@
+/* ----------------------------------------------- */
+/* HEADER                                          */
+/* ----------------------------------------------- */
+/* MOBILE FIRST */
+.main-header {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#menu {
+    display: none;
+
+    /* Hacer funcionar el checkbox -> Hacer funcionar el menú hamburgüesa */
+}
+
+/* ----------------------------------------------- */
+/* NAVBAR                                          */
+/* ----------------------------------------------- */
+
+.nav-bar {
+    background-color: mediumaquamarine;
+  /*   display: none; */
+
+    &__nav-list { /* .nav-bar__nav-list */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    &__nav-item { /* .nav-bar__nav-item */
+        text-align: center;
+        background-color: pink;
+    }
+
+    &__nav-link {
+        display: block;
+        background-color: purple;
+        padding: 1rem 2rem;
+        color: white;
+    }
+}
+
+/* ----------------------------------------------- */
+/* SEARCH BAR                                          */
+/* ----------------------------------------------- */
+
+.search-bar {
+    display: flex;
+    background-color: olivedrab;
+    justify-content: space-around;
+
+    &__logo-container { /* .search-bar__logo-container */
+        width: 18.75rem;
+        height: 3.75rem;
+    }
+
+    &__form-container { /* .search-bar__form-container */
+        padding: 1rem;
+
+        background-color: gold;
+
+    }
+
+    &__form-label {
+        background-color: greenyellow;
+    }
+
+    &__form-search {
+        background-color: deeppink;
+    }
+
+    &__form-submit {
+        background-color: darkslategray;
+    }
+
+    &__carrito-container {
+        /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+        flex: 0 0 3rem; /* shorthand (grow shrink basis) */
+        background-color: goldenrod;
+    }
+}
