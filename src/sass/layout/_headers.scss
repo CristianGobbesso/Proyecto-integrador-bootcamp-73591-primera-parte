@@ -5,12 +5,25 @@
 .main-header {
     display: flex;
     flex-direction: column-reverse;
+
+    @media screen and (min-width: 992px) {
+        & {
+            flex-direction: column;
+        }
+    }
 }
 
 #menu {
     display: none;
 
     /* Hacer funcionar el checkbox -> Hacer funcionar el menú hamburgüesa */
+
+    &:checked + .nav-bar {
+        display: block;
+    }
+    &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
+        background-color: yellow;
+    }
 }
 
 /* ----------------------------------------------- */
@@ -19,13 +32,19 @@
 
 .nav-bar {
     background-color: mediumaquamarine;
-  /*   display: none; */
+    display: none;
 
     &__nav-list { /* .nav-bar__nav-list */
         display: flex;
         flex-direction: column;
         justify-content: center;
         list-style-type: none;
+
+        @media screen and (min-width: 992px) {
+            & {
+                flex-direction: row;
+            } 
+        }
     }
 
     &__nav-item { /* .nav-bar__nav-item */
@@ -38,6 +57,12 @@
         background-color: purple;
         padding: 1rem 2rem;
         color: white;
+    }
+
+    @media screen and (min-width: 992px) {
+        & {
+            display: block;
+        }
     }
 }
 
@@ -59,6 +84,9 @@
         padding: 1rem;
 
         background-color: gold;
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
 
     }
 
@@ -80,3 +108,57 @@
         background-color: goldenrod;
     }
 }
+
+/* ----------------------------------------------- */
+/* MENÚ TOOGLE                                     */
+/* ----------------------------------------------- */
+
+.menu-toogle {
+    display: block;
+
+    background-color: red;
+    flex: 0 0 3rem;
+    position: relative;
+    cursor: pointer; /* manito */
+
+    &__label { /* .menu-toogle__label */
+        display: block;
+        background-color: black;
+        height: 100%;
+    }
+
+    &__top-bread, /* .menu-toogle__top-bread */
+    &__meat, /* .menu-toogle__top-bread */
+    &__bottom-bread { /* .menu-toogle__top-bread */
+        displaY: block;
+        background-color: #333;
+        height: .2rem;
+        position: absolute;
+        left: .5rem;
+        right: .5rem;
+    }
+
+    &__top-bread {
+        top: .8rem;
+    }
+
+    &__meat { /* Centrar sin usar flexbox */
+        top: 50%; /* centrando verticalmente */
+        margin-top: -.1rem;
+    }
+
+    &__bottom-bread {
+        bottom: .8rem;
+    }
+
+    @media screen and (min-width: 992px) {
+        & { /* .menu-toogle */
+            display: none;  
+        }
+    }
+
+}
+
+
+
+

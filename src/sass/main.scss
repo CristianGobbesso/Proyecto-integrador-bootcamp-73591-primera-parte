@@ -1,6 +1,8 @@
 @use './base/typografy.scss';
 @use './base/resets.scss';
 @use './layout/headers';
+@use './pages/inicio';
+@use './component/cards';
 /* Estructura 7 en 1.
 ! base -> todos los estilos de inicio
 -> _reset.scss

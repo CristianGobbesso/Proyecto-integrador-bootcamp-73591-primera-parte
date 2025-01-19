@@ -1,0 +1,11 @@
+.section-cards {
+    background-color: #f1f2f3;
+    padding: 1rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+}
