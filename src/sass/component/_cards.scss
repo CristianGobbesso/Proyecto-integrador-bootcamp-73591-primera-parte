@@ -84,6 +84,13 @@
             clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px); /* Estado final */
         }
     }
-   
+    &__heading {
+        padding: 5px;
+    }
+    
+    &__description {
+        padding: 5px;
+    }
+
 
 }
