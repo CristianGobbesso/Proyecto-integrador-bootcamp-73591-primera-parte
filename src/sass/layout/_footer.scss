@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: white;
+    padding: 15px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+
+    &__left {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &__right a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+
+
+}
+}
