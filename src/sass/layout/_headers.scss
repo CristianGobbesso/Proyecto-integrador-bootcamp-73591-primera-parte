@@ -22,7 +22,7 @@
         display: block;
     }
     &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
-        background-color: yellow;
+        background-color: red;
     }
 }
 
@@ -31,7 +31,7 @@
 /* ----------------------------------------------- */
 
 .nav-bar {
-    background-color: mediumaquamarine;
+    background-color: #222;
     display: none;
 
     &__nav-list { /* .nav-bar__nav-list */
@@ -54,9 +54,12 @@
 
     &__nav-link {
         display: block;
-        background-color: purple;
+        background-color: rgb(12, 12, 169);
         padding: 1rem 2rem;
         color: white;
+        text-decoration: none;
+        border: 1px solid white;
+        
     }
 
 
@@ -73,7 +76,7 @@
 
 .search-bar {
     display: flex;
-    background-color: olivedrab;
+    background-color: #222;;
     justify-content: space-around;
 
     &__logo-container { /* .search-bar__logo-container */
@@ -86,7 +89,7 @@
         font-size: 35px; 
         letter-spacing: 2px;
         font-weight: bold;
-        color: #333;        
+        color: #f3f0f0;        
     }
 
 
@@ -94,7 +97,7 @@
     &__form-container { /* .search-bar__form-container */
         padding: 1rem;
 
-        background-color: gold;
+        background-color: #222;
         display: flex;
         flex-basis: 100%;
         justify-content: center;
@@ -102,26 +105,35 @@
     }
 
     &__form-label {
-        background-color: greenyellow;
+        background-color: #222;
+        color: #f3f0f0;
+        margin: 10px;
     }
 
     &__form-search {
-        background-color: deeppink;
+        background-color: #f3f0f0;
+        border: 5px solid rgb(131, 129, 129);
     }
 
     &__form-submit {
-        background-color: darkslategray;
+        background-color: #f3f0f0;
+        margin: 5px;
+        border: 5px solid white;
     }
 
     &__carrito-container {
         /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
         flex: 0 0 3rem; /* shorthand (grow shrink basis) */
-        background-color: rgb(241, 236, 236);
+        background-color: #222;
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     &__carrito-container img {
-        height: 90%;
-        display: flex;
+        width: 70%;
+        height: auto;
         padding-left: 3px;
         
     }
