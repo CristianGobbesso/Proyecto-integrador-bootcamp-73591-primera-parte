@@ -59,6 +59,7 @@
         color: white;
     }
 
+
     @media screen and (min-width: 992px) {
         & {
             display: block;
@@ -115,7 +116,7 @@
     &__carrito-container {
         /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
         flex: 0 0 3rem; /* shorthand (grow shrink basis) */
-        background-color: goldenrod;
+        background-color: rgb(241, 236, 236);
     }
 }
 
