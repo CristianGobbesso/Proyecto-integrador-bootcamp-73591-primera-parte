@@ -15,7 +15,7 @@
     &:hover,
     &:focus {
         /* radianes 2pi, gradianes 400, decimles 360 grados, vueltas 1turn  */
-        transform: scale(1.03) skew(0deg) rotate(2deg);
+        transform: scale(1.03) skew(0deg) rotate(0deg);
         transform-origin: bottom;
         box-shadow: 0px 7px 8px 0px rgba(0 ,0 ,0 ,0.5);
     }
@@ -76,12 +76,14 @@
         }
 
         & &__image-container { /* .card .card__image-container */
-            clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px); /* Estado inicial */
+            clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
+             /* Estado inicial */
         }
 
         &:hover &__image-container,
         &:focus &__image-container {
-            clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px); /* Estado final */
+            clip-path: polygon(20% 0%, 80% 0, 100% 100%, 0% 100%);
+             /* Estado final */
         }
     }
     &__heading {
