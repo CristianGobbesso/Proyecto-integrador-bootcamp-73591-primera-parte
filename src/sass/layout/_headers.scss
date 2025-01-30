@@ -22,7 +22,7 @@
         display: block;
     }
     &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
-        background-color: red;
+        background-color: #267b84;
     }
 }
 
@@ -31,7 +31,7 @@
 /* ----------------------------------------------- */
 
 .nav-bar {
-    background-color: #222;
+    background-color: #061523;
     display: none;
 
     &__nav-list { /* .nav-bar__nav-list */
@@ -54,11 +54,11 @@
 
     &__nav-link {
         display: block;
-        background-color: rgb(12, 12, 169);
+        background-color: #267b84;
         padding: 1rem 2rem;
         color: white;
         text-decoration: none;
-        border: 1px solid white;
+        border: 1px solid #061523;
         
     }
 
@@ -76,7 +76,7 @@
 
 .search-bar {
     display: flex;
-    background-color: #222;;
+    background-color: #061523;;
     justify-content: space-around;
 
     &__logo-container { /* .search-bar__logo-container */
@@ -97,7 +97,7 @@
     &__form-container { /* .search-bar__form-container */
         padding: 1rem;
 
-        background-color: #222;
+        background-color: #061523;
         display: flex;
         flex-basis: 100%;
         justify-content: center;
@@ -105,26 +105,27 @@
     }
 
     &__form-label {
-        background-color: #222;
+        background-color: #061523;
         color: #f3f0f0;
         margin: 10px;
     }
 
     &__form-search {
         background-color: #f3f0f0;
-        border: 5px solid rgb(131, 129, 129);
+        border: 1px solid #267b84;
     }
 
     &__form-submit {
         background-color: #f3f0f0;
         margin: 5px;
-        border: 5px solid white;
+        padding: 3px;
+        border: 1px solid #267b84;
     }
 
     &__carrito-container {
         /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
         flex: 0 0 3rem; /* shorthand (grow shrink basis) */
-        background-color: #222;
+        background-color: #061523;
         margin-right: 15px;
         display: flex;
         align-items: center;
@@ -153,7 +154,7 @@
 
     &__label { /* .menu-toogle__label */
         display: block;
-        background-color: black;
+        background-color: #061523;
         height: 100%;
     }
 
@@ -161,7 +162,7 @@
     &__meat, /* .menu-toogle__top-bread */
     &__bottom-bread { /* .menu-toogle__top-bread */
         displaY: block;
-        background-color: #333;
+        background-color: whitesmoke;
         height: .2rem;
         position: absolute;
         left: .5rem;
