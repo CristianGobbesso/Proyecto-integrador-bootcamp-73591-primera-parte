@@ -118,6 +118,13 @@
         flex: 0 0 3rem; /* shorthand (grow shrink basis) */
         background-color: rgb(241, 236, 236);
     }
+
+    &__carrito-container img {
+        height: 90%;
+        display: flex;
+        padding-left: 3px;
+        
+    }
 }
 
 /* ----------------------------------------------- */
