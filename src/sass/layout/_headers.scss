@@ -33,6 +33,8 @@
 .nav-bar {
     background-color: #061523;
     display: none;
+    border-bottom: 1px solid white;
+    padding: 7px;
 
     &__nav-list { /* .nav-bar__nav-list */
         display: flex;
