@@ -1,0 +1,42 @@
+body {
+    background-color: #3fbde7;
+}
+
+.section-about-us {
+    background-color: #80c8e1; 
+    font-size: larger;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 2px solid white;
+
+   
+}
+
+
+
+.section-about-us__nosotros {
+    background-color: #3fbde7;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 20px;
+    text-align: left;
+    
+}
+.section-about-us__img {
+    display: none;
+}
+
+
+@media screen and (min-width: 992px){
+.section-about-us__img {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    float: right;
+    width: auto;
+    padding: 10px;
+    margin-left: 10px;
+  
+}
+
+}
