@@ -1,19 +1,5 @@
 
 
-.section-contact__header {
-    text-align: center;
-    padding: 10px;
-    padding-bottom: 4px;
-    background-color: #80c8e1;
-}
-
-.section-contact__header h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
-    border-bottom: 2px solid white;
-
-}
 .section-contact__contacto {
     
     display: flex;
@@ -27,9 +13,13 @@
 }
 
 .section-contact {
+    background-color: #80c8e1; 
+    font-size: larger;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 2px solid white;
+    //contacto h1.
 
-    
-    
     &__form{
     display: flex;
     flex-direction: column;
@@ -75,9 +65,38 @@
         background: #0056b3;
     }
 
+    &__iframe h2 {
+        padding-top: 20px;
+        text-align: center;
+        margin: 15px;
+    }
+    @media screen and (min-width: 992px){
+        &__contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    gap: 40px;
+    width: 100%;
+    max-width: auto;
+    padding: 20px;
+    margin: 25px;
+    border-radius: 8px;
+    }
 
+    &__iframe {
+        text-align: center;
+        width: 50%;
+       
+    }
+    &__iframe h1 {
+        text-align: center;
+        
+    }
+   
+   
 }
-
+}
 
 iframe {
     width: 100%;
@@ -86,10 +105,9 @@ iframe {
     align-items: center;
     justify-content: center;
     padding: 10px;
+    margin: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 
 }
 
-@media screen and (min-width: 992px){
 
-}
