@@ -18,10 +18,11 @@
 
     /* Hacer funcionar el checkbox -> Hacer funcionar el menú hamburgüesa */
 
-    &:checked + .nav-bar {
+    &:checked+.nav-bar {
         display: block;
     }
-    &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
+
+    &:checked~.search-bar .menu-toogle .menu-toogle__label {
         background-color: #267b84;
     }
 }
@@ -36,7 +37,8 @@
     border-bottom: 1px solid white;
     padding: 7px;
 
-    &__nav-list { /* .nav-bar__nav-list */
+    &__nav-list {
+        /* .nav-bar__nav-list */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -45,11 +47,12 @@
         @media screen and (min-width: 992px) {
             & {
                 flex-direction: row;
-            } 
+            }
         }
     }
 
-    &__nav-item { /* .nav-bar__nav-item */
+    &__nav-item {
+        /* .nav-bar__nav-item */
         text-align: center;
         background-color: pink;
     }
@@ -61,7 +64,7 @@
         color: white;
         text-decoration: none;
         border: 1px solid #061523;
-        
+
     }
 
 
@@ -78,31 +81,41 @@
 
 .search-bar {
     display: flex;
-    background-color: #061523;;
+    background-color: #061523;
+    ;
     justify-content: space-around;
 
-    &__logo-container { /* .search-bar__logo-container */
+
+    &__logo-container {
+        /* .search-bar__logo-container */
         width: 18.75rem;
         height: 3.75rem;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        font-size: 35px; 
+        font-size: 35px;
         letter-spacing: 2px;
         font-weight: bold;
-        color: #f3f0f0;        
+        color: white;
+
+    }
+
+    &__logo-container a {
+        text-decoration: none;
+        color: inherit;
     }
 
 
 
-    &__form-container { /* .search-bar__form-container */
+    &__form-container {
+        /* .search-bar__form-container */
         padding: 1rem;
-
         background-color: #061523;
         display: flex;
         flex-basis: 100%;
         justify-content: center;
+
 
     }
 
@@ -126,7 +139,8 @@
 
     &__carrito-container {
         /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-        flex: 0 0 3rem; /* shorthand (grow shrink basis) */
+        flex: 0 0 3rem;
+        /* shorthand (grow shrink basis) */
         background-color: #061523;
         margin-right: 15px;
         display: flex;
@@ -138,7 +152,7 @@
         width: 70%;
         height: auto;
         padding-left: 3px;
-        
+
     }
 }
 
@@ -152,17 +166,22 @@
     background-color: red;
     flex: 0 0 3rem;
     position: relative;
-    cursor: pointer; /* manito */
+    cursor: pointer;
+    /* manito */
 
-    &__label { /* .menu-toogle__label */
+    &__label {
+        /* .menu-toogle__label */
         display: block;
         background-color: #061523;
         height: 100%;
     }
 
-    &__top-bread, /* .menu-toogle__top-bread */
-    &__meat, /* .menu-toogle__top-bread */
-    &__bottom-bread { /* .menu-toogle__top-bread */
+    &__top-bread,
+    /* .menu-toogle__top-bread */
+    &__meat,
+    /* .menu-toogle__top-bread */
+    &__bottom-bread {
+        /* .menu-toogle__top-bread */
         displaY: block;
         background-color: whitesmoke;
         height: .2rem;
@@ -175,8 +194,10 @@
         top: .8rem;
     }
 
-    &__meat { /* Centrar sin usar flexbox */
-        top: 50%; /* centrando verticalmente */
+    &__meat {
+        /* Centrar sin usar flexbox */
+        top: 50%;
+        /* centrando verticalmente */
         margin-top: -.1rem;
     }
 
@@ -185,13 +206,10 @@
     }
 
     @media screen and (min-width: 992px) {
-        & { /* .menu-toogle */
-            display: none;  
+        & {
+            /* .menu-toogle */
+            display: none;
         }
     }
 
 }
-
-
-
-
