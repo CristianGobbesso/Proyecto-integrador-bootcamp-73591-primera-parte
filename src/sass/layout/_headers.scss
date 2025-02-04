@@ -128,6 +128,7 @@
     &__form-search {
         background-color: #f3f0f0;
         border: 1px solid #267b84;
+        cursor:text;
     }
 
     &__form-submit {
@@ -135,6 +136,7 @@
         margin: 5px;
         padding: 3px;
         border: 1px solid #267b84;
+        cursor: pointer;
     }
 
     &__carrito-container {
@@ -152,6 +154,7 @@
         width: 70%;
         height: auto;
         padding-left: 3px;
+        cursor: pointer;
 
     }
 }
