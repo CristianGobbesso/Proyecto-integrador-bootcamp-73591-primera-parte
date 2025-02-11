@@ -53,18 +53,22 @@
         </section>
     <section class="section-contact__contacto">
         
-        <form class="section-contact__form">
+        <form class="section-contact__form" id="contact-form">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <input type="text" id="nombre" name="nombre" value="" required>
+            <small data-error="nombre-error"></small>
     
             <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required>
+            <input type="text" id="apellido" name="apellido" value="" required>
+            <small data-error="apellido-error"></small>
     
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" value=""  >
+            <small data-error="email-error"></small>
     
             <label for="comentarios">Comentarios:</label>
-            <textarea id="comentarios" name="comentarios" rows="5" required></textarea>
+            <textarea id="comentarios" name="comentarios" rows="5" value="" required></textarea>
+            <small data-error="comentarios-error"></small>
     
             <button type="submit">Enviar</button>
         </form>
