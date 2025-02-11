@@ -208,6 +208,9 @@ function validarEmail(){
     if(emailInput.value.trim()=== '' ) {
         console.log('el email es obligatorio');
         emailError.textContent = 'El email es obligatorio'
+    } else if (!emailInput.value.trim().includes('@') ){
+        console.error('El email no es valido');
+        emailError.textContent = 'El email es obligatorio'
     } else {
         console.log('se cargo correctamente');
         emailError.textContent =''
@@ -224,6 +227,15 @@ function validarComentarios(){
         console.log('se cargo correctamente');
         comentarioError.textContent =''
     }
+}
+
+//? Reseteo del formulario 
+
+function resetFormulario(){
+    nombreInput.value = ''
+    apellidoInput.value = ''
+    emailInput.value = ''
+    comentarioText.value = ''
 }
 
 console.log(formulario, nombreInput, apellidoInput, emailInput, comentarioText);
@@ -244,7 +256,7 @@ formulario.addEventListener('submit',(e)=>{
             comentario: comentarioText.value
         }
         console.log(fromData);
-        
+        resetFormulario()
     } else{
         console.error('No se envia el formulario porque no es valido');
     }
