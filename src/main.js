@@ -158,3 +158,98 @@ const start3 = () => {
 //                          evento        | callback
 window.addEventListener('DOMContentLoaded', start) /* se dispara cuando todo el html fue leido (cargado) */
 
+
+
+window.addEventListener('DOMContentLoaded',()=>{
+
+const formulario = document.querySelector('#contact-form');
+const nombreInput = document.querySelector('#nombre');
+const apellidoInput = document.querySelector('#apellido');
+const emailInput = document.querySelector('#email');
+const comentarioText = document.querySelector('#comentarios');
+
+// selecciono los small
+
+const nombreError = document.querySelector('[data-error="nombre-error"]');
+const apellidoError = document.querySelector('[data-error="apellido-error"]');
+const emailError = document.querySelector('[data-error="email-error"]');
+const comentarioError = document.querySelector('[data-error="comentarios-error"]');
+
+
+// ! validacion formulario
+
+
+//? valido el nombre
+function validarNombre(){
+    if(nombreInput.value.trim()=== '' ) {
+        console.log('el nombre es obligatorio');
+        nombreError.textContent = 'El nombre es obligatorio'
+    } else {
+        console.log('se cargo correctamente');
+        nombreError.textContent =''
+    }
+}
+
+
+//? valido el apellido 
+function validarApellido(){
+    if(apellidoInput.value.trim()=== '' ) {
+        console.log('el apellido es obligatorio');
+        apellidoError.textContent = 'El apellido es obligatorio'
+    } else {
+        console.log('se cargo correctamente');
+        apellidoError.textContent =''
+    }
+}
+
+
+//? valido el email
+function validarEmail(){
+    if(emailInput.value.trim()=== '' ) {
+        console.log('el email es obligatorio');
+        emailError.textContent = 'El email es obligatorio'
+    } else {
+        console.log('se cargo correctamente');
+        emailError.textContent =''
+    }
+}
+
+
+//? valido los comentarios
+function validarComentarios(){
+    if(comentarioText.value.trim()=== '' ) {
+        console.log('el email es obligatorio');
+        comentarioError.textContent = 'Debe ingresar un comentario'
+    } else {
+        console.log('se cargo correctamente');
+        comentarioError.textContent =''
+    }
+}
+
+console.log(formulario, nombreInput, apellidoInput, emailInput, comentarioText);
+
+formulario.addEventListener('submit',(e)=>{
+    e.preventDefault()
+    
+    validarNombre()
+    validarApellido()
+    validarEmail()
+    validarComentarios()
+
+    if(nombreError.textContent === '' && apellidoError.textContent === '' && emailError.textContent === '' && comentarioError.textContent === '' ){
+        const fromData = {
+            nombre: nombreInput.value,
+            apellido: apellidoInput.value,
+            email: emailInput.value,
+            comentario: comentarioText.value
+        }
+        console.log(fromData);
+        
+    } else{
+        console.error('No se envia el formulario porque no es valido');
+    }
+
+    
+    
+})
+})
