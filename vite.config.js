@@ -2,15 +2,16 @@ import { resolve } from 'path' /* node */
 
 
 export default {
-    // config options
     css: {
-        devSourcemap: true
+      devSourcemap: true
     },
     build: {
-        rollupOptions: {
-            input: resolve(__dirname, 'index.html'),
-            nosotros: resolve(__dirname, './src/pages/nosotros.html'),
-            contacto: resolve(__dirname, './src/pages/contacto.html')
+      rollupOptions: {
+        input: {
+          main: resolve(__dirname, 'index.html'),
+          nosotros: resolve(__dirname, './src/pages/nosotros/nosotros.html'),
+          contacto: resolve(__dirname, './src/pages/contacto/contacto.html')
         }
+      }
     }
-}
+  }
