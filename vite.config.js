@@ -9,9 +9,9 @@ export default {
       rollupOptions: {
         input: {
           main: resolve(__dirname, 'index.html'),
-          nosotros: resolve(__dirname, './src/pages/nosotros/nosotros.html'),
-          contacto: resolve(__dirname, './src/pages/contacto/contacto.html')
+          nosotros: resolve(__dirname, 'src/pages/nosotros.html'),
+          contacto: resolve(__dirname, 'src/pages/contacto.html')
         }
       }
     }
-  }
+  } 
