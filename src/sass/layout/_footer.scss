@@ -23,8 +23,10 @@
     }
     
 }
+@media screen and (min-width: 992px){
 .footer__right a:hover {
     transform: scale(1.1); 
     cursor: pointer; 
     font-weight: 700;
+}
 }
