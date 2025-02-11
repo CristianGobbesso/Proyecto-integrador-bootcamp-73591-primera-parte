@@ -110,4 +110,8 @@ iframe {
 
 }
 
-
+small[data-error] {
+    color: red; /* Cambia el color del texto a rojo */
+    font-size: 0.9rem; /* Opcional: Ajusta el tamaño del texto */
+    font-weight: bold; /* Opcional: Hace el texto más visible */
+}
