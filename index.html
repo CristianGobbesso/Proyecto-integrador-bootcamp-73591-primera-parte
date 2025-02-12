@@ -1,74 +1,81 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>Proyecto Integrador - Inicio</title>
-  </head>
-  <body>
 
-    <header class="main-header">
-      <input type="checkbox" id="menu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Integrador - Inicio</title>
+</head>
 
-      <nav class="nav-bar">
-        <ul class="nav-bar__nav-list">
-          <!-- li*4.nav-bar__nav-item>a.nav-bar__nav-link{Inicio} -->
-          <li class="nav-bar__nav-item">
-            <a href="" class="nav-bar__nav-link">Inicio</a>
-          </li>
-          <li class="nav-bar__nav-item">
-            <a href="" class="nav-bar__nav-link">Alta</a>
-          </li>
-          <li class="nav-bar__nav-item">
-            <a href="./src/pages/nosotros.html" class="nav-bar__nav-link">Nosotros</a>
-          </li>
-          <li class="nav-bar__nav-item">
-            <a href="./src/pages/contacto.html" class="nav-bar__nav-link">Contacto</a>
-          </li>
-        </ul>
-      </nav> <!-- .nav-bar -->
+<body>
 
-      <div class="search-bar">
-        <div class="search-bar__logo-container"><a href="/index.html">Codex</a></div>
-        <form action="#" class="search-bar__form-container">
-          <label for="busqueda" class="search-bar__form-label">Buscar</label>
-          <input type="search" id="busqueda" class="search-bar__form-search">
-          <button type="submit" class="search-bar__form-submit">Buscar</button>
-        </form>
-        <div class="search-bar__carrito-container"><img src="/public/icons/shopping-cart.svg" alt="imagen carrito de compras"></div>
-        <div class="menu-toogle">
-          <label for="menu" class="menu-toogle__label">
-            <span class="menu-toogle__top-bread"></span>
-            <span class="menu-toogle__meat"></span>
-            <span class="menu-toogle__bottom-bread"></span>
-          </label>
-        </div> <!-- .menu-toogle -->
-      </div> <!-- .search-bar -->
+  <header class="main-header">
+    <input type="checkbox" id="menu">
 
-    </header>
+    <nav class="nav-bar">
+      <ul class="nav-bar__nav-list">
+        <!-- li*4.nav-bar__nav-item>a.nav-bar__nav-link{Inicio} -->
+        <li class="nav-bar__nav-item">
+          <a href="" class="nav-bar__nav-link">Inicio</a>
+        </li>
+        <li class="nav-bar__nav-item">
+          <a href="" class="nav-bar__nav-link">Alta</a>
+        </li>
+        <li class="nav-bar__nav-item">
+          <a href="./src/pages/nosotros.html" class="nav-bar__nav-link">Nosotros</a>
+        </li>
+        <li class="nav-bar__nav-item">
+          <a href="./src/pages/contacto.html" class="nav-bar__nav-link">Contacto</a>
+        </li>
+      </ul>
+    </nav> <!-- .nav-bar -->
 
-    <main>
-      <section class="section-cards">
-        <header class="section-cards__header">
-          <h1>Encotra los mejores productos en CODEX.</h1>
-          <p>Se encontraron X productos</p>
-        </header>
-      </section>
+    <div class="search-bar">
+      <div class="search-bar__logo-container"><a href="/index.html">Codex</a></div>
+      <form action="#" class="search-bar__form-container">
+        <label for="busqueda" class="search-bar__form-label">Buscar</label>
+        <input type="search" id="busqueda" class="search-bar__form-search">
+        <button type="submit" class="search-bar__form-submit">Buscar</button>
+      </form>
+      <div class="search-bar__carrito-container"><img src="/public/icons/shopping-cart.svg"
+          alt="imagen carrito de compras"></div>
+      <div class="menu-toogle">
+        <label for="menu" class="menu-toogle__label">
+          <span class="menu-toogle__top-bread"></span>
+          <span class="menu-toogle__meat"></span>
+          <span class="menu-toogle__bottom-bread"></span>
+        </label>
+      </div> <!-- .menu-toogle -->
+    </div> <!-- .search-bar -->
 
-      <section class="cards-container" id="container-productos"></section>
+  </header>
 
-    </main>
+  <main>
+    <section class="section-cards">
+      <header class="section-cards__header">
+        <h1>Encotra los mejores productos en CODEX.</h1>
+        <p>Se encontraron X productos</p>
+      </header>
+    </section>
 
-    <footer class="footer">
-      <div class="footer__left">© 2025 Todos los derechos reservados.</div>
-      <div class="footer__social-icons">
-          <a href="https://www.facebook.com/" target="_blank"><img src="/public/icons/facebook.svg" alt="icono de la red social facebook" ></a>
-          <a href="https://www.instagram.com/" target="_blank"><img src="/public/icons/instagram.svg" alt="icono de la red social instagram"></a>
-      </div>
-      <div class="footer__right"><a href="https://www.linkedin.com/" target="_blank">Desarrollado por Cristian Gobbesso.</a></div>
+    <section class="cards-container" id="container-productos"></section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__left">© 2025 Todos los derechos reservados.</div>
+    <div class="footer__social-icons">
+      <a href="https://www.facebook.com/" target="_blank"><img src="/public/icons/facebook.svg"
+          alt="icono de la red social facebook"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="/public/icons/instagram.svg"
+          alt="icono de la red social instagram"></a>
+    </div>
+    <div class="footer__right"><a href="https://www.linkedin.com/" target="_blank">Desarrollado por Cristian
+        Gobbesso.</a></div>
   </footer>
 
-    <script type="module" src="/src/main.js"></script>
-    
-  </body>
+  <script type="module" src="/src/main.js"></script>
+
+</body>
+
 </html>

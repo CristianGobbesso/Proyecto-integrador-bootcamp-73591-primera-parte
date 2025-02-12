@@ -9,18 +9,22 @@ body {
     padding: 15px;
     border-bottom: 2px solid white;
 
-    &__nosotros{
+    &__nosotros {
         background-color: #3fbde7;
     font-size: 23px;
     letter-spacing: 2px;
     padding: 20px;
     text-align: start;
-    
     }
+
     &__img {
         display: none;
     }
 
+    &__nosotros h2 {
+        font-size: 27px;
+        font-weight: bold;
+    }
 }
 
 @media screen and (min-width: 992px){
@@ -35,18 +39,22 @@ body {
         display: block;
         
     }
+
     img {
         border: 2px solid rgb(13, 13, 13);
         border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease-in-out;
     }
+    
     img:hover{
         transform: scale(1.1);
 }
+
 .section-about-us__img figcaption{
     text-align: center;
 }
+
 }
 
 
