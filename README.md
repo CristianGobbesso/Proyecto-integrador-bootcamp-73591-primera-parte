@@ -1,28 +1,8 @@
-# Creando el proyecto Vite para el integrador
-
+# PROYECTO INTEGRADOR ETAPA 1
+## Bootcamp 73591
 ```sh
-npm create vite@latest ./ -- --template vanilla
+Nombre: Cristian Gobbesso
+Github: https://github.com/CristianGobbesso/Proyecto-integrador-bootcamp-73591-primera-parte.git
+Netlify: https://proyecto-integrador-bootcamp-73591-pr.netlify.app/
 ```
-
-## Instalamos dependencias
-
-```sh
-npm i
-```
-
-## Arrancamos el servidor de desarrollo
-
-```sh
-npm run dev
-```
-
-## Instalando el preprocesador de SASS
-
-```sh
-npm i sass-embedded -D
-```
-
-## Agrego el archivo 'vite.config.js'
-
-
 
