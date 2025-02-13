@@ -43,6 +43,7 @@
         flex-direction: column;
         justify-content: center;
         list-style-type: none;
+        
 
         @media screen and (min-width: 992px) {
             & {
@@ -54,7 +55,8 @@
     &__nav-item {
         /* .nav-bar__nav-item */
         text-align: center;
-        background-color: pink;
+        
+        
     }
 
     &__nav-link {
@@ -64,9 +66,12 @@
         color: white;
         text-decoration: none;
         border: 1px solid #061523;
-
+        transition: transform 0.3s ease, border 0.3s ease;
     }
-
+    
+    &__nav-link:hover {
+        transform: scale(1.1);
+    }
 
     @media screen and (min-width: 992px) {
         & {
@@ -82,7 +87,6 @@
 .search-bar {
     display: flex;
     background-color: #061523;
-    ;
     justify-content: space-around;
 
 
@@ -98,14 +102,20 @@
         letter-spacing: 2px;
         font-weight: bold;
         color: white;
-
+        
     }
 
+   
     &__logo-container a {
+        padding-top: 4px;
         text-decoration: none;
         color: inherit;
+        transition: transform 0.4s ease-in-out;
     }
 
+    &__logo-container a:hover {
+        transform: scale(1.4);
+    }
 
 
     &__form-container {
@@ -137,10 +147,17 @@
         padding: 3px;
         border: 1px solid #267b84;
         cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    &__form-submit:hover {
+        background-color: #267b84 ;
+        border: 2px solid #f3f0f0;
+        transform: scale(1.1);
+        
     }
 
     &__carrito-container {
-        /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
         flex: 0 0 3rem;
         /* shorthand (grow shrink basis) */
         background-color: #061523;
@@ -151,11 +168,24 @@
     }
 
     &__carrito-container img {
-        width: 70%;
+        width: 80%;
         height: auto;
         padding-left: 3px;
         cursor: pointer;
 
+    }
+
+    @media screen and (min-width: 992px){
+        &__carrito-container img {
+            transition: transform 0.5s ease-in-out;
+            margin-right: 10px;
+            box-shadow: 0px 4px 20px rgba(1, 1, 1, 0.615);
+        }
+
+        &__carrito-container img:hover {
+            transform: scale(1.7);
+            
+        }
     }
 }
 
@@ -175,6 +205,7 @@
         display: block;
         background-color: #061523;
         height: 100%;
+        cursor: pointer;
     }
 
     &__top-bread,
